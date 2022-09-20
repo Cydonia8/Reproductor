@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(17, 17, 17);
+    background-color: black;
     font-family: 'Overpass', sans-serif;
     margin: 0;
     box-sizing: border-box;
@@ -10,11 +10,10 @@ header img{
 .encabezado img{
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #F4D478;
 }
 
 header{
-    background-color: #2c2929;
+    background-color: #2c292966;
     width: 100%;
     position: fixed;
     top: 0px;
@@ -44,9 +43,9 @@ h1{
     font-size: 3rem;
     color: white;
     position: absolute;
-    top: 50%;
-    left: 25%;
-    
+    top: 20%;
+    left: 20%;
+    text-align: center;
 }
 .general{
     display: flex;
