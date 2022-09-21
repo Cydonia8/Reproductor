@@ -88,6 +88,8 @@ h2{
     scroll-snap-type: x mandatory;
     border: 1.5px solid aliceblue;
     border-radius: 30px;
+    margin: auto;
+    width: 80%;
 }
 .catalogo img{
     width: 23%;
