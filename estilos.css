@@ -5,7 +5,7 @@ body{
     box-sizing: border-box;
 }
 header img{
-    width: 8%;
+    width: 6%;
 }
 .encabezado{
     display: flex;
@@ -102,9 +102,34 @@ h2{
     border-radius: 30px;
     margin: auto;
     width: 80%;
+    margin-bottom: 2rem;
 }
 .catalogo img{
     width: 23%;
     border-radius: 50%;
     scroll-snap-align: center;
+}
+
+footer img{
+   width: 15%;
+   padding: 2rem;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: flex-end;
+    border-top: 2px solid #F4D478;
+}
+footer ul{
+    margin: 0;
+    list-style: none;
+    align-self: center;
+}
+#iconos i{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.8rem;
 }
