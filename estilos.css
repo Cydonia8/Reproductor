@@ -34,13 +34,19 @@ header{
     font-family: 'Alegreya Sans', sans-serif;
 
 }
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 nav ul{
    display: flex; 
    margin: 0;
    list-style: none;    
 }
 nav li:first-child{
-    margin-right: 10rem;
+    margin-right: 8rem;
 }
 nav a{
     text-decoration: none;
