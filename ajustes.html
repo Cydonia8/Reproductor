@@ -46,8 +46,50 @@
                 <br>
                 <label for="nueva-contraseña"></label>
                 <input type="password" name="nueva-contraseña" id="nueva-contraseña" placeholder="Nueva contraseña">
-
+                <br>
+                <label for="repite-contraseña"></label>
+                <input type="password" name="repite-contraseña" id="repite-contraseña">
+                <br>
+                <h3>Cambiar estilo preferido</h3>
+                <br>
+                <select name="estilo" id="estilo">
+                    <option checked value="folk-ruso">Folk Ruso</option>
+                    <option value="rock-progresivo">Rock Progresivo</option>
+                    <option value="metal">Metal</option>
+                    <option value="pop">Pop</option>
+                    <option value="jazz">Jazz</option>
+                    <option value="hard-rock">Hard Rock</option>
+                </select>
+                <br>
+                <input type="submit" value="Guardar cambios" name="ajustes-enviar">
             </form>
+        </section>
+        <section id="reproductor">
+            <div id="track">
+                <div id="progress"></div>
+                <div id="handler"></div>
+            </div>
+            <div id="container">
+                <div class="controles">
+                    <button id="pausa"></button>
+                    <button id="play"></button>
+                </div>
+                <div id="informacion-pista">
+                    <div class="controles">
+                        <button id="anterior"></button>                        
+                    </div>
+                    <p id="titulo"></p>
+                    <div class="controles">
+                        <button id="siguiente"></button>
+                    </div>
+                </div>
+                <div class="controles">
+                    <div id="volumen">
+                        <div id="total"></div>
+                        <div id="handler-volumen"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

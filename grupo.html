@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><!--El menú de navegación será horizontal, situado en el lado izquierdo de la web-->
+        <img src="media/img/logo2.png" alt="">
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="grupo-imagen"> 
+            <img src="media/img/pt-group.webp" alt="">
+        </section>
+        <section>
+            <div class="slider-grupo"><!--Este slider tiene tres opciones, según la que se seleccione se mostrará en pantalla una u otra. Cuando se cambie entre ellas, habrá
+                                      una pequeña animación de desplazamiento-->
+                <h3>Biografía</h3>
+                <h3>Discografía</h3>
+                <h3>Artistas similares</h3>
+            </div>
+            <article id="biografia">
+                <p>
+                    Porcupine Tree es una banda de rock progresivo formada en Hemel Hempstead, Reino Unido. Esta banda es el proyecto más exitoso del músico Steven Wilson y han desarrollado piezas musicales que se caracterizan por su diversidad y la calidad distintiva del sonido en sus grabaciones. Porcupine Tree se creó en 1987 como un proyecto en colaboración que contaba con la presencia de Steven Wilson y Malcolm Stocks. Inspirados por los grupos predominantes durante su juventud, como Pink Floyd, crearon una banda de rock ficticia con el nombre de Porcupine Tree. 
+                </p>
+            </article>
+            <article id="discografia">
+                <div class="discos"> <!--Aquí se irán añadiendo divs para cada disco, dentro del cual estará la foto de portada y el nombre-->
+                    <img src="media/img/fear-blank.jpg" alt="">
+                    <h4>Fear of a blank planet</h4>
+                </div>
+            </article>
+            <article id="artistas-similares">
+
+            </article>
+        </section>
+        <section id="reproductor">
+            <div id="track">
+                <div id="progress"></div>
+                <div id="handler"></div>
+            </div>
+            <div id="container">
+                <div class="controles">
+                    <button id="pausa"></button>
+                    <button id="play"></button>
+                </div>
+                <div id="informacion-pista">
+                    <div class="controles">
+                        <button id="anterior"></button>                        
+                    </div>
+                    <p id="titulo"></p>
+                    <div class="controles">
+                        <button id="siguiente"></button>
+                    </div>
+                </div>
+                <div class="controles">
+                    <div id="volumen">
+                        <div id="total"></div>
+                        <div id="handler-volumen"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

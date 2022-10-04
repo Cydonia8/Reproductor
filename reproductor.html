@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="media/img/logo2.png" alt="">
+        <nav>
+            <ul>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <select name="estilo" id="">
+                <option checked value="folk-ruso">Folk Ruso</option>
+                <option value="rock-progresivo">Rock Progresivo</option>
+                <option value="metal">Metal</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="hard-rock">Hard Rock</option>
+            </select>
+        </form>
+        <section class="album-destacado">
+            <h4>Álbum destacado</h4>
+            <h4>Closure/Continuation</h4>
+            <h4>Porcupine Tree</h4>
+            <img src="media/img/closure.png" alt="Closure Continuation">
+        </section>
+        <section class="albumes-recomendaciones">
+            <div class="albumes-recomendaciones-containers">
+                <img src="media/img/handcannot.jpg" alt="Hand.Cannot.Erase">
+                <h5>Hand.Cannot.Erase</h5>
+                <h5>Steven Wilson</h5>
+            </div>
+            <div class="albumes-recomendaciones-containers">
+                <img src="media/img/darkside.jpg" alt="The Dark Side of the Moon">
+                <h5>The Dark Side of the Moon</h5>
+                <h5>Pink Floyd</h5>
+            </div>
+            <div class="albumes-recomendaciones-containers">
+                <img src="media/img/octa.jpg" alt="The Dark Side of the Moon">
+                <h5>Octavarium</h5>
+                <h5>Dream Theater</h5>
+            </div>
+        </section>
+        <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
+            <div id="track">
+                <div id="progress"></div>
+                <div id="handler"></div>
+            </div>
+            <div id="container">
+                <div class="controles">
+                    <button id="pausa"></button>
+                    <button id="play"></button>
+                </div>
+                <div id="informacion-pista">
+                    <div class="controles">
+                        <button id="anterior"></button>                        
+                    </div>
+                    <p id="titulo"></p>
+                    <div class="controles">
+                        <button id="siguiente"></button>
+                    </div>
+                </div>
+                <div class="controles">
+                    <div id="volumen">
+                        <div id="total"></div>
+                        <div id="handler-volumen"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
