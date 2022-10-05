@@ -29,6 +29,54 @@
                 <option value="año-descendente">Más recientes primero</option>
             </select>
         </form>
+        <section id="albumes">
+            <div class="contenedor-album">
+                <h3>Dream Theater</h3>
+                <div class="album">
+                    <img src="media/img/octa.jpg" alt="">
+                    <img src="media/img/scenes.webp" alt="">
+                    <img src="media/img/achange.jpg" alt="">
+                    <img src="media/img/aview.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="contenedor-album">
+                <h3>Pink Floyd</h3>
+                <div class="album">
+                    <img src="media/img/animals.jpg" alt="">
+                    <img src="media/img/darkside.jpg" alt="">
+                    <img src="media/img/wall.png" alt="">
+                    <img src="media/img/wish.jpg" alt="">
+                </div>
+            </div>            
+        </section>
+        <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
+            <div id="track">
+                <div id="progress"></div>
+                <div id="handler"></div>
+            </div>
+            <div id="container">
+                <div class="controles">
+                    <button id="pausa"></button>
+                    <button id="play"></button>
+                </div>
+                <div id="informacion-pista">
+                    <div class="controles">
+                        <button id="anterior"></button>                        
+                    </div>
+                    <p id="titulo"></p>
+                    <div class="controles">
+                        <button id="siguiente"></button>
+                    </div>
+                </div>
+                <div class="controles">
+                    <div id="volumen">
+                        <div id="total"></div>
+                        <div id="handler-volumen"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
