@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+    <header><!--Menú de navegación lateral con 5 enlaces. Es el mismo en todas las secciones de la web excepto en la home y en la página de soporte-->
+        <img src="media/img/logo2.png" alt="">
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section><!--Sección con información de un usuario pero más de cara a otros usuarios-->
+            <img src="media/img/calvo.jpg" alt="">
+            <h2>Perfect Driver</h2>
+            <ul>
+                <li>Reseñas escritas: 14</li>
+                <li>Estilo preferido: folk ruso</li>
+                <li>Número de álbumes guardados: 14</li>
+                <li>Grupo preferido: Stevie Wonder</li>
+            </ul>
+        </section>
+        <section><!--En esta sección habrá un contenedor que contega todos los álbumes que el usuario haya guardado-->
+            <h2>Álbumes guardados</h2>
+            <div>
+                <div class="albumes">
+                    <img src="media/img/darkside.jpg" alt="">
+                    <h3>Dark Side of the Moon</h3>
+                    <h3>Pink Floyd</h3>
+                </div>
+            </div>
+        </section>
+        <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
+            <div id="track">
+                <div id="progress"></div>
+                <div id="handler"></div>
+            </div>
+            <div id="container">
+                <div class="controles">
+                    <button id="pausa"></button>
+                    <button id="play"></button>
+                </div>
+                <div id="informacion-pista">
+                    <div class="controles">
+                        <button id="anterior"></button>                        
+                    </div>
+                    <p id="titulo"></p>
+                    <div class="controles">
+                        <button id="siguiente"></button>
+                    </div>
+                </div>
+                <div class="controles">
+                    <div id="volumen">
+                        <div id="total"></div>
+                        <div id="handler-volumen"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
