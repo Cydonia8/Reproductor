@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Overpass&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="media/img/logo2.png" type="image/x-icon">
     <title>Formulario de contacto</title>
 </head>
 <body>
@@ -20,26 +25,23 @@
         <h1>Cuéntanos tu problema</h1>
         <section>
             <form action=""><!--Formulario para enviar una consulta personalizada-->
-                <label for="nombre"></label>
-                <input type="text" name="nombre" id="nombre" value="Nombre">
-                <br>
-                <label for="mail"></label>
-                <input type="email" name="mail" id="mail" value="Correo">
-                <br>
-                <select name="motivo" id="motivo"><!--Desplegable para seleccionar un motivo-->
-                    <option selected hidden>Motivo de contacto</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <br>
+                <div class="superior">
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" value="Nombre">
+                    <label for="mail"></label>
+                    <input type="email" name="mail" id="mail" value="Correo">
+                    <select name="motivo" id="motivo"><!--Desplegable para seleccionar un motivo-->
+                        <option selected hidden>Motivo de contacto</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
                 <legend>Cuéntanos en detalle</legend>
-                <textarea name="" id="" cols="50" rows="15"></textarea><!--Textarea en el que desarrollar el problema-->
-                <br>
+                <textarea name="" id="" cols="100" rows="15"></textarea><!--Textarea en el que desarrollar el problema-->
                 <label for="archivos">Archivos extra</label><!--Input para añadir archivos extra si fueran necesarios-->
                 <input type="file" name="archivos" id="">
-                <br>
                 <input type="submit" name="enviar">
             </form>
         </section>
