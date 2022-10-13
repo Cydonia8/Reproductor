@@ -1,0 +1,103 @@
+body{
+    background-color: white;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.5px solid #F4D478;
+}
+header img{
+    float: left;
+    width: 6%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 100%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+h1{
+    text-align: center;
+}
+.descripcion{
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.descripcion a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+form{
+    margin: auto;
+    width: 50%;
+}
+input{
+    border-radius: 20px;
+    padding: 0.4rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.preguntas{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.preguntas summary{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}
+.preguntas article{
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+summary::marker{
+    color: #F4D478;
+    font-weight: bold;
+}
+footer img{
+    width: 15%;
+    padding: 2rem;
+ }
+footer{
+     background-color: black;
+     display: flex;
+     justify-content: space-between;
+     color: white;
+     align-items: flex-end;
+     border-top: 2px solid #F4D478;
+ }
+footer ul{
+     margin: 0;
+     list-style: none;
+     align-self: center;
+ }
+#iconos i{
+     color: white;
+     font-size: 1.5rem;
+     margin-right: 0.5rem;
+     margin-bottom: 0.8rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.redes{
+    margin-right: 1rem;
+}
