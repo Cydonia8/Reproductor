@@ -29,11 +29,12 @@ nav a{
 }
 h1{
     text-align: center;
+
 }
 .descripcion{
     width: 50%;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .descripcion a{
     text-decoration: none;
@@ -64,12 +65,8 @@ input{
 .preguntas article{
     width: 100%;
     border-bottom: 3px solid black;
-    padding-bottom: 3rem;
-    padding-top: 1rem;
-}
-summary::marker{
-    color: #F4D478;
-    font-weight: bold;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
 }
 footer img{
     width: 15%;
@@ -82,6 +79,7 @@ footer{
      color: white;
      align-items: flex-end;
      border-top: 2px solid #F4D478;
+     margin-top: 5rem;
  }
 footer ul{
      margin: 0;
