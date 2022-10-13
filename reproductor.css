@@ -41,6 +41,7 @@ main{
 .albumes-recomendaciones{
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 .albumes-recomendaciones-containers{
     width: 30%;
