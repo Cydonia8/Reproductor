@@ -2,14 +2,15 @@ body{
     margin: 0px;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;
     color: white;
     background-color: black;
+    font-family: 'Overpass', sans-serif;
 }
 header{
     grid-column: 1/1;
     grid-row: 1;
-    background-color: grey;
+    background-color: #21201d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,8 +18,48 @@ header{
     top: 0px;
     height: 100vh;
 }
+nav li:nth-child(-n+4){
+    list-style: none;
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 4.5rem;
+}
+nav li:nth-child(4){
+    margin-bottom: 7rem;
+}
+nav li:last-child{
+    color: #F4D478;
+    list-style: none;
+    font-size: 2rem;
+    
+}
+form{
+    margin: 1.3rem 0 0 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    margin-right: 1.5rem;
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    font-weight: bolder;
+    border: none;
+}
+form input::placeholder{
+    color: white;
+}
+form select{
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    color: white;
+    font-weight: bolder;
+}
+nav ul{
+    padding: 0;
+    width: 80%;
+}
 header img{
-    width: 50%;
+    width: 80%;
 }
 main{
     grid-column: 2/-1;
@@ -29,26 +70,107 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 .album-destacado img{
     width: 80%;
     margin: auto;
     border-radius: 30px;
+    -webkit-box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,204,0.61); 
+box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,204,0.61);
 }
 .albumes-recomendaciones img{
-    width: 10%;
+    width: 40%;
+    border-radius: 50%;
 }
 .albumes-recomendaciones{
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center; 
+    width: 85%;
+    margin: auto;   
+}
+.albumes-recomendaciones-containers h5{
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 .albumes-recomendaciones-containers{
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    border: 3px solid white;
+    border: 2px solid white;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0.7rem;
+    background: rgb(32,30,30);
+    background: linear-gradient(100deg, rgba(32,30,30,1) 15%, rgba(94,33,204,1) 76%);
+}
+.albumes-recomendaciones-containers ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+}
+.albumes-recomendaciones-containers li{
+    list-style: none;
+    font-size: 1.3rem;
+
 }
 .album-destacado div > *{
-    margin: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+.album-destacado h4:nth-of-type(2){
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#reproductor{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    bottom: 0px;
+    width: 90%;
+    background-color: black;
+}
+#progress{
+    border: 4px solid white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.controles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+#informacion-pista{
+    display: flex;
+    border: 2px solid white;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 1rem;
+}
+#reproductor button{
+    background-color: black;
+    border: none;
+}
+#reproductor button i{
+    color: white;
+    font-size: 1.3rem;
+}
+#volumen{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 50%;
 }
