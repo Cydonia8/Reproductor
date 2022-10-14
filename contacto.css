@@ -51,6 +51,11 @@ input{
     padding: 0.4rem;
     margin: 1.5rem 0 1.5rem 0;
 }
+strong:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
 .preguntas{
     display: flex;
     align-items: flex-start;
@@ -61,7 +66,7 @@ input{
 .preguntas summary{
     font-size: 1.5rem;
     font-weight: bolder;
-    
+    cursor: pointer;
 }
 .preguntas article{
     width: 100%;
