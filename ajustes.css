@@ -44,6 +44,9 @@ nav ul{
     padding: 0;
     width: 80%;
 }
+nav a{
+    color: white;
+}
 header img{
     width: 80%;
 }
