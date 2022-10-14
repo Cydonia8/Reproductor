@@ -28,7 +28,7 @@ nav li:nth-child(-n+4){
     list-style: none;
     color: white;
     font-size: 1.7rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 nav a{
     color: white;
@@ -84,6 +84,10 @@ form select{
     -webkit-box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,204,0.61); 
 box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,204,0.61);
 }
+.album-destacado a{
+    width: 100%;
+    text-align: center;
+}
 .albumes-recomendaciones img{
     width: 40%;
     border-radius: 50%;
@@ -95,7 +99,7 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
     align-items: center; 
     width: 85%;
     margin: auto;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 .albumes-recomendaciones-containers h5{
     margin-top: 0.3rem;
