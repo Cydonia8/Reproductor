@@ -4,54 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajustes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Overpass&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="media/img/logo2.png" type="image/x-icon">
     <title>Ajustes</title>
 </head>
 <body>
     <header><!--Menú de navegación lateral con 5 enlaces. Es el mismo en todas las secciones de la web excepto en la home y en la página de soporte-->
-        <img src="media/img/logo2.png" alt="">
-        <nav>
-            <ul>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-            </ul>
-        </nav>
+        <div>
+            <img src="media/img/logo2.png" alt="">       
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <li><i class="fa-solid fa-music"></i></li>
+                    <li><i class="fa-solid fa-comment"></i></li>
+                    <li><i class="fa-solid fa-gear"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <span><i class="fa-solid fa-user"></i></span>
     </header>
     <main>
-        <section><!--Sección con información personal del usuario-->
+        <form class="buscar" action=""><!--Desplegable para seleccionar un estilo. En función de la selección, aparecerán artistas de ese estilo y algunos detalles del reproductor cambiarán de color-->
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+        </form>
+        <section class="informacion-personal"><!--Sección con información personal del usuario-->
             <img src="media/img/calvo.jpg" alt="">
-            <h2>Perfect Driver</h2>
-            <ul>
-                <li>Agapito Di Sousa</li>
-                <li>mclovin@yahoo.com</li>
-                <li>Estilo preferido: folk ruso</li>
-            </ul>
+            <div>
+                <h2>Perfect Driver</h2>
+                <ul>
+                    <li>Agapito Di Sousa</li>
+                    <li>mclovin@yahoo.com</li>
+                    <li>Estilo preferido: folk ruso</li>
+                </ul>
+            </div>
         </section>
-        <hr>
-        <section>
+
+        <section class="formulario">
             <form action=""><!--En este formulario se podrá cambiar el email, la contraseña y el estilo preferido-->
                 <h3>Cambiar email</h3>
-                <br>
-                <label for="mail-actual"></label>
-                <input type="email" name="mail-actual" placeholder="email@actual.com" disabled>
-                <label for="mail-nuevo"></label>
-                <input type="email" name="mail-nuevo" id="mail-nuevo" placeholder="Nuevo email">
-                <br>
+                <div class="mails">
+                    <input type="email" name="mail-actual" placeholder="email@actual.com" disabled>
+                    <input type="email" name="mail-nuevo" id="mail-nuevo" placeholder="Nuevo email">
+                </div>
                 <h3>Cambiar contraseña</h3>
-                <br>
-                <label for="contraseña-actual"></label>
-                <input type="password" name="contraseña-actual" id="contraseña-actual" placeholder="Contraseña actual">
-                <br>
-                <label for="nueva-contraseña"></label>
-                <input type="password" name="nueva-contraseña" id="nueva-contraseña" placeholder="Nueva contraseña">
-                <br>
-                <label for="repite-contraseña"></label>
-                <input type="password" name="repite-contraseña" id="repite-contraseña">
-                <br>
+                <div class="contraseñas">
+                    <input type="password" name="contraseña-actual" id="contraseña-actual" placeholder="Contraseña actual">
+                    <input type="password" name="nueva-contraseña" id="nueva-contraseña" placeholder="Nueva contraseña">
+                    <input type="password" name="repite-contraseña" id="repite-contraseña">
+                </div>
                 <h3>Cambiar estilo preferido</h3>
-                <br>
                 <select name="estilo" id="estilo">
                     <option checked value="folk-ruso">Folk Ruso</option>
                     <option value="rock-progresivo">Rock Progresivo</option>
@@ -60,27 +65,29 @@
                     <option value="jazz">Jazz</option>
                     <option value="hard-rock">Hard Rock</option>
                 </select>
-                <br>
                 <input type="submit" value="Guardar cambios" name="ajustes-enviar">
             </form>
         </section>
-        <section id="reproductor">
+        <br><br><br><br><br>
+        <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
             <div id="track">
-                <div id="progress"></div>
-                <div id="handler"></div>
+                <div id="progress">
+                    <div id="handler"></div>
+                </div>
+
             </div>
             <div id="container">
                 <div class="controles">
-                    <button id="pausa"></button>
-                    <button id="play"></button>
+                    <button id="pausa"><i class="fa-sharp fa-solid fa-pause"></i></button>
+                    <button id="play"><i class="fa-sharp fa-solid fa-play"></i></button>
                 </div>
                 <div id="informacion-pista">
                     <div class="controles">
-                        <button id="anterior"></button>                        
+                        <button id="anterior"><i class="fa-solid fa-arrow-left"></i></button>                        
                     </div>
-                    <p id="titulo"></p>
+                    <p id="titulo">Harridan</p>
                     <div class="controles">
-                        <button id="siguiente"></button>
+                        <button id="siguiente"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
                 <div class="controles">

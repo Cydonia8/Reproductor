@@ -47,58 +47,91 @@ nav ul{
 header img{
     width: 80%;
 }
-form{
+.buscar{
     margin: 1.3rem 0 0 1.3rem;
     float: right;
 }
-form input{
+.buscar input{
     margin-right: 1.5rem;
     background-color: #7d7c7a;
     padding: 0.4rem;
     font-weight: bolder;
     border: none;
 }
-form input::placeholder{
+.buscar input::placeholder{
     color: white;
 }
-.album-info{
+.informacion-personal{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 97%;
+    margin: auto;
+    padding-bottom: 1.2rem;
+    border-bottom: 1.3px solid white;
 }
-.album-info img{
-    width: 25%;
+.informacion-personal img{
+    width: 30%;
+    border-radius: 60%;
 }
-.album-info div{
+.informacion-personal li{
+    margin-bottom: 3rem;
+    list-style: none;
+}
+.informacion-personal div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.3rem;
-}
-.album-info li{
-    margin-bottom: 2.5rem;
-    list-style: none;
     font-size: 1.2rem;
 }
-.artista-titulo h2{
-    margin-bottom: 0;
+.formulario{
+    margin-bottom: 4rem;
 }
-.artista-titulo h3{
-    margin-top: 0;
-}
-.lista-canciones{
+.formulario form{
+    width: 60%;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    font-size: 1.4rem;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.lista-canciones li{
-    margin-bottom: 0.4rem;
-    text-align: center;
+form .mails{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+form .contraseñas{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: space-between;
+}
+.formulario select{
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    font-weight: bold;
+}
+.formulario input[type="submit"]{
+    align-self: flex-end;
+    padding: 1rem;
+    background-color: rgb(204, 201, 197);
+    font-weight: bold;
+}
+.formulario input:not(input[type="submit"]){
+    padding: 0.4rem;
+}
+.formulario input[type="email"]:first-of-type::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.formulario input:not(input[type="email"]:first-of-type)::placeholder{
+    color: black;
+    font-weight: bold;
 }
 
 #reproductor{
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     position: fixed;
