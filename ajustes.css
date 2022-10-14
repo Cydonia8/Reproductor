@@ -104,7 +104,7 @@ form .mails{
 form .contraseñas{
     display: flex;
     flex-direction: column;
-    height: 15vh;
+    height: 25vh;
     justify-content: space-between;
 }
 .formulario select{
