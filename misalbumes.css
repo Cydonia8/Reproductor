@@ -54,10 +54,40 @@ main{
     grid-row: 1;
     background-color: black;
 }
+#filtro-grupos form {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+section#filtro-grupos {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+#filtro-grupos form input{
+    margin-right: 1.5rem;
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    font-weight: bolder;
+    border: none;
+}
+#filtro-grupos form input::placeholder{
+    color: white;
+}
+#filtro-grupos form select{
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    color: white;
+    font-weight: bolder;
+}
 #albumes{
     width: 70%;
     margin: auto;
     margin-top: 6.5rem;
+    margin-bottom: 10rem;
+}
+#albumes h3{
+    font-size: 1.5rem;
 }
 
 .contenedor-album{
@@ -70,13 +100,14 @@ main{
 }
 .album{
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
     justify-content: space-between;
 }
 .album img{
     width: 13%;
     border-radius: 50%;
     scroll-snap-align: center;
+    margin-right: 4rem;
 }
 
 #reproductor{

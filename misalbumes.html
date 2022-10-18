@@ -28,40 +28,57 @@
         <span><a href="perfil.html"><i class="fa-solid fa-user"></i></a></span>
     </header>
     <main>
-        <form action=""><!--Desplegable para ordenar los grupos de nuestros álbumes guardados bajo un criterio-->
-            <select name="ordenar-albumes" id="ordenar-albumes">
-                <option checked hidden>Ordenar grupos</option>
-                <option value="a-z">Alfabéticamente (A-Z)</option>
-                <option value="z-a">Alfabéticamente (Z-A)</option>
-                <option value="año-ascendente">Más antiguos primero</option>
-                <option value="año-descendente">Más recientes primero</option>
-            </select>
-            <input type="text" name="buscar" id="buscar" placeholder="Buscar">
-        </form>
+        <section id="filtro-grupos">
+            <form action=""><!--Desplegable para ordenar los grupos de nuestros álbumes guardados bajo un criterio-->
+                <select name="ordenar-albumes" id="ordenar-albumes">
+                    <option checked hidden>Ordenar grupos</option>
+                    <option value="a-z">Alfabéticamente (A-Z)</option>
+                    <option value="z-a">Alfabéticamente (Z-A)</option>
+                    <option value="año-ascendente">Más antiguos primero</option>
+                    <option value="año-descendente">Más recientes primero</option>
+                </select>
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+            </form>
+        </section>
         <section id="albumes"><!--Esta sección contiene un título con el nombre del grupo y debajo un contenedor con todos sus álbumes guardados-->
             <h3>Dream Theater</h3>
             <div class="contenedor-album">                
                 <div class="album">
-                    <img src="media/img/octa.jpg" alt="">
-                    <img src="media/img/scenes.webp" alt="">
-                    <img src="media/img/achange.jpg" alt="">
-                    <img src="media/img/aview.jpg" alt="">
-                    <img src="media/img/achange.jpg" alt="">
-                    <img src="media/img/aview.jpg" alt="">
-                    <img src="media/img/achange.jpg" alt="">
-                    <img src="media/img/aview.jpg" alt="">
+                    <img src="media/img/octa.jpg" alt="Portada del álbum Octavarium de Dream Theater">
+                    <img src="media/img/scenes.webp" alt="Portada del álbum Scenes from a Memory de Dream Theater">
+                    <img src="media/img/achange.jpg" alt="Portada del álbum A Change of Seasons de Dream Theater">
+                    <img src="media/img/aview.jpg" alt="Portada del álbum A View from the Top of the World de Dream Theater">
+                    <img src="media/img/awake.jpeg" alt="Portada del álbum Awake de Dream Theater">
+                    <img src="media/img/sdegrees.jpg" alt="Portada del álbum Six Degrees of Innter Turbulence de Dream Theater">
+                    <img src="media/img/images.jpg" alt="Portada del álbum Images and Words de Dream Theater">
                 </div>
             </div>
             <h3>Pink Floyd</h3>
             <div class="contenedor-album">
                 
                 <div class="album">
-                    <img src="media/img/animals.jpg" alt="">
-                    <img src="media/img/darkside.jpg" alt="">
-                    <img src="media/img/wall.png" alt="">
-                    <img src="media/img/wish.jpg" alt="">
+                    <img src="media/img/animals.jpg" alt="Portada del álbum Animals de Pink Floyd">
+                    <img src="media/img/darkside.jpg" alt="Portada del álbum Dark Side of the Moon de Pink Floyd">
+                    <img src="media/img/wall.png" alt="Portada del álbum The Wall de Pink Floyd">
+                    <img src="media/img/wish.jpg" alt="Portada del álbum Wish You Were Here de Pink Floyd">
+                    <img src="media/img/meddle.jpg" alt="Portada del álbum Meddle de Pink Floyd">
+                    <img src="media/img/umma.jpg" alt="Portada del álbum Ummagumma de Pink Floyd">
+                    <img src="media/img/asaucerful.jpg" alt="Portada del álbum A Saucerful of Secrets de Pink Floyd">
                 </div>
-            </div>            
+            </div>
+            <h3>Genesis</h3>
+            <div class="contenedor-album">
+                
+                <div class="album">
+                    <img src="media/img/trick.jpg" alt="Portada del álbum A Trick of the Tail de Genesis">
+                    <img src="media/img/foxtrot.jpg" alt="Portada del álbum Foxtrot de Genesis">
+                    <img src="media/img/selling.jpg" alt="Portada del álbum Selling England by the Pound de Genesis">
+                    <img src="media/img/nursery.jpg" alt="Portada del álbum Nursery Cryme de Genesis">
+                    <img src="media/img/lamb.jpg" alt="Portada del álbum The Lamb Lies Down on Broadway de Genesis">
+                    <img src="media/img/wind.jpg" alt="Portada del álbum Wind and Wuthering de Genesis">
+                    <img src="media/img/duke.webp" alt="Portada del álbum Duke de Genesis">
+                </div>
+            </div>                       
         </section>
         <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
             <div id="track">
