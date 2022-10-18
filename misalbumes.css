@@ -54,93 +54,29 @@ main{
     grid-row: 1;
     background-color: black;
 }
-form{
-    margin: 1.3rem 0 0 1.3rem;
-    display: flex;
-    justify-content: space-between;
+#albumes{
+    width: 70%;
+    margin: auto;
 }
-form input{
-    margin-right: 1.5rem;
-    background-color: #7d7c7a;
-    padding: 0.4rem;
-    font-weight: bolder;
-    border: none;
-}
-form input::placeholder{
-    color: white;
-}
-form select{
-    background-color: #7d7c7a;
-    padding: 0.4rem;
-    color: white;
-    font-weight: bolder;
-}
-.album-destacado{
+
+.contenedor-album{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    background-color: whitesmoke;
 }
-.album-destacado img{
-    width: 80%;
-    margin: auto;
-    border-radius: 30px;
-    -webkit-box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,204,0.61); 
-box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,204,0.61);
-}
-.album-destacado a{
-    width: 100%;
-    text-align: center;
-}
-.albumes-recomendaciones img{
-    width: 40%;
-    border-radius: 50%;
-}
-.albumes-recomendaciones{
+.album{
     display: flex;
     gap: 20px;
-    justify-content: space-around;
-    align-items: center; 
-    width: 85%;
-    margin: auto;
-    flex-wrap: wrap;
-    margin-bottom:8rem;
+    justify-content: space-between;
 }
-.albumes-recomendaciones-containers h5{
-    margin-top: 0.3rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
+.album img{
+    width: 15%;
+    border-radius: 50%;
+    scroll-snap-align: center;
 }
-.albumes-recomendaciones-containers{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid white;
-    align-items: center;
-    border-radius: 20px;
-    padding: 0.7rem;
-    background: rgb(32,30,30);
-    background: linear-gradient(100deg, rgba(32,30,30,1) 15%, rgba(94,33,204,1) 76%);
-}
-.albumes-recomendaciones-containers ul{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 0;
-}
-.albumes-recomendaciones-containers li{
-    list-style: none;
-    font-size: 1.3rem;
 
-}
-.album-destacado div > *{
-    margin: 0.5rem;
-    text-align: center;
-}
-.album-destacado h4:nth-of-type(2){
-    font-weight: bold;
-    font-size: 1.2rem;
-}
 #reproductor{
     margin-top: 3rem;
     display: flex;

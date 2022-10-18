@@ -35,10 +35,15 @@ nav li:nth-child(-n+4){
     font-size: 1.7rem;
     margin-bottom: 5rem;
 }
+.enlace-inicio{
+    text-align: center;
+}
 header span{
     font-size: 2.5rem;
-    color: #F4D478;
     margin-bottom: 2rem;
+}
+header span a{
+    color: #F4D478;
 }
 nav ul{
     padding: 0;
