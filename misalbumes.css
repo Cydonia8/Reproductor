@@ -57,6 +57,7 @@ main{
 #albumes{
     width: 70%;
     margin: auto;
+    margin-top: 6.5rem;
 }
 
 .contenedor-album{
@@ -65,14 +66,15 @@ main{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     background-color: whitesmoke;
+    padding: 0.5rem 0 0 0.5rem;
 }
 .album{
     display: flex;
-    gap: 20px;
+    gap: 5rem;
     justify-content: space-between;
 }
 .album img{
-    width: 15%;
+    width: 13%;
     border-radius: 50%;
     scroll-snap-align: center;
 }
