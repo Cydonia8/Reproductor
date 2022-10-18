@@ -10,7 +10,7 @@ header{
     align-items: center;
     border-bottom: 2.5px solid #F4D478;
 }
-header img{
+header  img{
     float: left;
     width: 6%;
 }
