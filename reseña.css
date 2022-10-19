@@ -70,7 +70,7 @@ header img{
     color: white;
 }
 .info-album{
-    width: 60%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
@@ -86,7 +86,12 @@ header img{
 }
 .info-album h3{
     margin: 1rem;
+    margin-left: 0;
     font-size: 1.5rem;
+}
+.info-album h3:first-of-type{
+    margin-bottom: 0.2rem;
+    margin-top: 0;
 }
 .info-album li{
     list-style: none;
@@ -96,10 +101,10 @@ header img{
 .info-album ul{
     padding: 0;
 }
-.comentarios::before{
+.comentarios form::after{
     content: "";
     display: block;
-    width: 90%;
+    width: 100%;
     background-color: white;
     margin: auto;
     height: 1.3px;
@@ -127,6 +132,7 @@ header img{
     font-weight: bolder;
     border: none;
     padding: 0.8rem;
+    color: white;
 }
 .ordenar-comentarios input:first-of-type::placeholder{
     color: white;
@@ -136,11 +142,41 @@ header img{
     padding: 0.4rem;
     font-weight: bold;
     background-color: #d9d9d9;
+    border: 0;
 }
 .ordenar-comentarios > *{
     margin-bottom: 2rem;
 }
-
+.contenedor-comentarios{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.comentario{
+    background-color: whitesmoke;
+    color: black;
+    padding: 0.8rem;
+}
+.comentario h3{
+    margin: 0;
+    display: inline-block;
+}
+.comentario img{
+    width: 35%;
+    border-radius: 50%;
+}
+.comentario:not(.contenedor-comentarios:last-child){
+    margin-bottom: 1.5rem;
+}
+.user{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+#like{
+    margin-right: 3rem;
+}
 #reproductor{
     display: flex;
     flex-direction: column;
