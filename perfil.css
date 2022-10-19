@@ -50,6 +50,20 @@ nav ul{
 header img{
     width: 80%;
 }
+.buscar{
+    margin: 1.3rem 0 0 1.3rem;
+    float: right;
+}
+.buscar input{
+    margin-right: 1.5rem;
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    font-weight: bolder;
+    border: none;
+}
+.buscar input::placeholder{
+    color: white;
+}
 main{
     grid-column: 2/-1;
     grid-row: 1;
@@ -77,9 +91,12 @@ main{
 .informacion-usuario div{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: 1.1rem;
+}
+.informacion-usuario ul{
+    padding: 0;
 }
 
 .albumes-guardados h2{
