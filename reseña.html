@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reseña.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Overpass&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="media/img/logo2.png" type="image/x-icon">
+    <title>Reseña</title>
+</head>
+<body>
+    <header><!--Menú de navegación lateral con 5 enlaces. Es el mismo en todas las secciones de la web excepto en la home y en la página de soporte-->
+        <div>
+            <a class="enlace-inicio" href="index.html"><img src="media/img/logo2.png" alt=""></a>    
+            <nav>
+                <ul>
+                    <li><a href="reproductor.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><i class="fa-solid fa-music"></i></li>
+                    <li><i class="fa-solid fa-comment"></i></li>
+                    <li><a href="ajustes.html"><i class="fa-solid fa-gear"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <span><a href="perfil.html"><i class="fa-solid fa-user"></i></a></span>
+    </header>
+    <main>
+        <form class="buscar" action=""><!--Desplegable para seleccionar un estilo. En función de la selección, aparecerán artistas de ese estilo y algunos detalles del reproductor cambiarán de color-->
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+        </form>
+        <section class="info-album">
+            <img src="media/img/octa.jpg" alt="">
+            <div>
+                <h3>Octavarium</h3>
+                <h3>Dream Theater</h3>
+                <ul>
+                    <li><i class="fa-solid fa-clock"></i> 1h 6 min</li>
+                    <li><i class="fa-solid fa-calendar"></i> 2022</li>
+                    <li><i class="fa-solid fa-bars"></i> 10 canciones</li>
+                    <li><i class="fa-solid fa-star-half-stroke"></i> Puntuación media</li>
+                </ul>
+            </div>            
+        </section>
+        <section class="comentarios">
+            <form class="ordenar-comentarios" action="">
+                <select name="" id="">
+                    <option value="" checked hidden>Ordenar por</option>
+                    <option value="">Mejor valorados primero</option>
+                    <option value="">Más recientes</option>
+                    <option value="">Más antiguos</option>
+                </select>
+                <input type="text" name="" placeholder="Escribe tu reseña" id="">
+                <input type="submit" name="" id="">
+            </form>
+        </section>
+        <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
+            <div id="track">
+                <div id="progress">
+                    <div id="handler"></div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="controles">
+                    <button id="pausa"><i class="fa-sharp fa-solid fa-pause"></i></button>
+                    <button id="play"><i class="fa-sharp fa-solid fa-play"></i></button>
+                </div>
+                <div id="informacion-pista">
+                    <div class="controles">
+                        <button id="anterior"><i class="fa-solid fa-arrow-left"></i></button>                        
+                    </div>
+                    <p id="titulo">Harridan</p>
+                    <div class="controles">
+                        <button id="siguiente"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="controles">
+                    <div id="volumen">
+                        <div id="total"></div>
+                        <div id="handler-volumen"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

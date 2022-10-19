@@ -1,0 +1,195 @@
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 1fr;
+    color: white;
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+}
+main{
+    grid-column: 2/-1;
+    grid-row: 1;
+    background-color: black;
+}
+header{
+    grid-column: 1/1;
+    grid-row: 1;
+    background-color: #21201d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    justify-content: space-between;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav li:nth-child(-n+4){
+    list-style: none;
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+}
+.enlace-inicio{
+    text-align: center;
+}
+header span{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+header span a{
+    color: #F4D478;
+}
+nav ul{
+    padding: 0;
+    width: 80%;
+}
+nav a{
+    color: white;
+}
+header img{
+    width: 80%;
+}
+.buscar{
+    margin: 1.3rem 0 0 1.3rem;
+    float: right;
+}
+.buscar input{
+    margin-right: 1.5rem;
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    font-weight: bolder;
+    border: none;
+}
+.buscar input::placeholder{
+    color: white;
+}
+.info-album{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    align-items: flex-start;
+}
+.info-album img{
+    width: 35%;
+}
+.info-album div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-album h3{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.info-album li{
+    list-style: none;
+    font-size: 1.4rem;
+    margin-bottom: 2.3rem;
+}
+.info-album ul{
+    padding: 0;
+}
+.comentarios::before{
+    content: "";
+    display: block;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    height: 1.3px;
+}
+.ordenar-comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.ordenar-comentarios input[type="text"]{
+    width: 100%;
+}
+.ordenar-comentarios select{
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    color: white;
+    font-weight: bolder;
+}
+.ordenar-comentarios input:first-of-type{
+    background-color: #7d7c7a;
+    padding: 0.4rem;
+    font-weight: bolder;
+    border: none;
+    padding: 0.8rem;
+}
+.ordenar-comentarios input:first-of-type::placeholder{
+    color: white;
+}
+.ordenar-comentarios input[type="submit"]{
+    width: 10%;
+    padding: 0.4rem;
+    font-weight: bold;
+    background-color: #d9d9d9;
+}
+.ordenar-comentarios > *{
+    margin-bottom: 2rem;
+}
+
+#reproductor{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    bottom: 0px;
+    width: 90%;
+    background-color: black;
+}
+#progress{
+    border: 4px solid white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+#handler{
+    border: 3px solid #F4D478;
+    border-radius: 50%;
+    width: 5%;
+}
+.controles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+#informacion-pista{
+    display: flex;
+    border: 2px solid white;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 1rem;
+}
+#reproductor button{
+    background-color: black;
+    border: none;
+}
+#reproductor button i{
+    color: white;
+    font-size: 1.3rem;
+}
+#volumen{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 50%;
+}
