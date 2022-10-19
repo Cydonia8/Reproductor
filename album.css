@@ -35,8 +35,9 @@ nav li:nth-child(-n+4){
     font-size: 1.7rem;
     margin-bottom: 5rem;
 }
-nav a{
+a{
     color: white;
+    text-decoration: none;
 }
 .enlace-inicio{
     text-align: center;
