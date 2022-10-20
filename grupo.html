@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grupo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="media/img/logo2.png" type="image/x-icon">
     <title>Grupo</title>
 </head>
 <body>
     <header><!--Menú de navegación lateral con 5 enlaces. Es el mismo en todas las secciones de la web excepto en la home y en la página de soporte-->
-        <img src="media/img/logo2.png" alt="">
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
+        <div>
+            <a class="enlace-inicio" href="index.html"><img src="media/img/logo2.png" alt=""></a>    
+            <nav>
+                <ul>
+                    <li><a href="reproductor.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="misalbumes.html"><i class="fa-solid fa-music"></i></a></li>
+                    <li><a href="ajustes.html"><i class="fa-solid fa-gear"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <span><a href="perfil.html"><i class="fa-solid fa-user"></i></a></span>
     </header>
     <main>
+        <form action=""><!--Desplegable para seleccionar un estilo. En función de la selección, aparecerán artistas de ese estilo y algunos detalles del reproductor cambiarán de color-->
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar">
+        </form>
         <section id="grupo-imagen"><!--Sección con la fotografía en horizontal del grupo-->
-            <img src="media/img/pt-group.webp" alt="">
+            <img src="media/img/pt-group" alt="">
+            <h1>Porcupine Tree</h1>
         </section>
-        <section>
+        <section id="informacion-grupo">
             <div class="slider-grupo"><!--Este slider tiene tres opciones, según la que se seleccione se mostrará en pantalla una u otra. Cuando se cambie entre ellas, habrá
                                       una pequeña animación de desplazamiento-->
                 <h3>Biografía</h3>
                 <h3>Discografía</h3>
-                <h3>Artistas similares</h3>
+                <h3>Publicaciones</h3>
             </div>
             <article id="biografia"><!--Pequeño párrafo para mostrar la biografía del grupo-->
                 <p>
@@ -40,28 +52,42 @@
                     <img src="media/img/fear-blank.jpg" alt="">
                     <h4>Fear of a blank planet</h4>
                 </div>
+                <div class="discos"> <!--Aquí se irán añadiendo divs para cada disco, dentro del cual estará la foto de portada y el nombre-->
+                    <img src="media/img/fear-blank.jpg" alt="">
+                    <h4>Fear of a blank planet</h4>
+                </div>
+                <div class="discos"> <!--Aquí se irán añadiendo divs para cada disco, dentro del cual estará la foto de portada y el nombre-->
+                    <img src="media/img/fear-blank.jpg" alt="">
+                    <h4>Fear of a blank planet</h4>
+                </div>
+                <div class="discos"> <!--Aquí se irán añadiendo divs para cada disco, dentro del cual estará la foto de portada y el nombre-->
+                    <img src="media/img/fear-blank.jpg" alt="">
+                    <h4>Fear of a blank planet</h4>
+                </div>
             </article><!--Recomendaciones de grupos similares, aún no he pensado cómo se mostrará-->
             <article id="artistas-similares">
 
             </article>
         </section>
-        <section id="reproductor">
+        <section id="reproductor"><!--Esto sería el reproductor, que por el momento sólo es un conjunto de contenedores y botones-->
             <div id="track">
-                <div id="progress"></div>
-                <div id="handler"></div>
+                <div id="progress">
+                    <div id="handler"></div>
+                </div>
+
             </div>
             <div id="container">
                 <div class="controles">
-                    <button id="pausa"></button>
-                    <button id="play"></button>
+                    <button id="pausa"><i class="fa-sharp fa-solid fa-pause"></i></button>
+                    <button id="play"><i class="fa-sharp fa-solid fa-play"></i></button>
                 </div>
                 <div id="informacion-pista">
                     <div class="controles">
-                        <button id="anterior"></button>                        
+                        <button id="anterior"><i class="fa-solid fa-arrow-left"></i></button>                        
                     </div>
-                    <p id="titulo"></p>
+                    <p id="titulo">Harridan</p>
                     <div class="controles">
-                        <button id="siguiente"></button>
+                        <button id="siguiente"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
                 <div class="controles">
