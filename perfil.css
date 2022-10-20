@@ -108,7 +108,6 @@ main{
 .contenedor-albumes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
     gap: 40px;
     background: rgb(144,143,131);

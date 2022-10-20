@@ -107,10 +107,10 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
 #discografia{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    align-items: center;
 }
 #discografia img{
-    width: 80%;
+    width: 70%;
 }
 .discos{
     width: 33%;
