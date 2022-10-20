@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+    background-image: url('media/img/fondo-registro.jpg');
+    background-position: center;
+    background-size: cover;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+section .contenedor-form{
+    border: 2px solid;
+    border-color: #00000099;
+    padding: 3.5rem;
+    backdrop-filter: blur(10px);
+    background-color: #5f5e3744;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+form input{
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    border: none;
+}
+form select{
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border-radius: 10px;
+    border: none;
+}
+.check{
+    display: flex;
+}
+input[type="submit"]{
+    cursor: pointer;
+    font-weight: bold
+}
