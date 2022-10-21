@@ -98,6 +98,17 @@ section#filtro-grupos {
     background-color: whitesmoke;
     padding: 0.5rem 0 0 0.5rem;
 }
+.contenedor-album::-webkit-scrollbar{
+    width: 2px;
+    height: 8px;
+}
+.contenedor-album::-webkit-scrollbar-track{
+    background: whitesmoke;
+}
+.contenedor-album::-webkit-scrollbar-thumb{
+    background-color: #908f83;    /* color of the scroll thumb */
+    border-radius: 7px;       /* roundness of the scroll thumb */
+}
 .album{
     display: flex;
     gap: 4rem;

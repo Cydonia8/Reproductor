@@ -104,7 +104,7 @@ h2{
     gap: 7px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    border: 1.5px solid aliceblue;
+    border: 3px solid whitesmoke;
     border-radius: 30px;
     margin: auto;
     width: 80%;
@@ -114,6 +114,17 @@ h2{
     width: 23%;
     border-radius: 50%;
     scroll-snap-align: center;
+}
+.catalogo::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+.catalogo::-webkit-scrollbar-track{
+    background: black;
+}
+.catalogo::-webkit-scrollbar-thumb{
+    background-color: #908f83;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
 footer img{

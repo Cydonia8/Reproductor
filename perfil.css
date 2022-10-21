@@ -118,6 +118,17 @@ main{
     overflow-y: scroll;
     padding: 0.5rem;
 }
+.contenedor-albumes::-webkit-scrollbar{
+    width: 9px;
+}
+.contenedor-albumes::-webkit-scrollbar-track{
+    background: #c8ae62;
+}
+.contenedor-albumes::-webkit-scrollbar-thumb{
+    background-color: #908f83;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
 .albumes{
     width: 30%;
     color: black;
