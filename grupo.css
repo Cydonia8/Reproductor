@@ -104,6 +104,9 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
     border-radius: 15px;
     align-items: center;
 }
+.slider-grupo h3:first-child{
+    border-bottom: 4px solid black;
+}
 #discografia{
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +123,7 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
 }
 
 #reproductor{
+    padding-top: 1.5rem;
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
