@@ -87,7 +87,7 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
 }
 #grupo-imagen h1{
     position: absolute;
-    bottom: 0px;
+    bottom: -30px;
     font-size: 3rem;
     font-family: 'Space Grotesk', sans-serif;
 
