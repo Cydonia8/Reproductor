@@ -82,7 +82,9 @@ main{
 }
 .informacion-usuario img{
     width: 30%;
-    border-radius: 60%;
+    border-radius: 50%;
+    height: 45vh;
+    object-fit: cover;
 }
 .informacion-usuario li{
     margin-bottom: 3rem;
