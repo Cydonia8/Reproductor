@@ -92,6 +92,14 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
     width: 100%;
     text-align: center;
 }
+.album-destacado div a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.album-destacado div a:hover{
+    text-decoration: underline;
+}
 .albumes-recomendaciones img{
     width: 40%;
     border-radius: 50%;
