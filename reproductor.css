@@ -127,8 +127,14 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
     align-items: center;
     border-radius: 20px;
     padding: 0.7rem;
+}
+.albumes-recomendaciones-containers:nth-child(2n){
     background: rgb(32,30,30);
     background: linear-gradient(100deg, rgba(32,30,30,1) 15%, rgba(94,33,204,1) 76%);
+}
+.albumes-recomendaciones-containers:nth-child(2n+1){
+    background: rgb(32,30,30);
+    background: linear-gradient(-100deg, rgba(32,30,30,1) 20%, rgb(14, 61, 181) 76%);
 }
 .albumes-recomendaciones-containers ul{
     display: flex;
