@@ -152,7 +152,8 @@ form .contraseñas{
     justify-content: center;
     bottom: 0px;
     width: 90%;
-    background-color: black;
+    background: rgb(20,0,45);
+background: linear-gradient(90deg, rgba(20,0,45,1) 11%, rgba(0,0,0,1) 60%);
 }
 #progress{
     border: 4px solid white;
@@ -191,7 +192,7 @@ form .contraseñas{
     margin-top: 1rem;
 }
 #reproductor button{
-    background-color: black;
+    background-color: transparent;
     border: none;
 }
 #reproductor button i{
