@@ -173,6 +173,12 @@ main{
     width: 90%;
     margin: auto;
 }
+#siguiente{
+    margin-left: auto;
+}
+#track{
+    display: flex;
+}
 #handler{
     border: 3px solid #F4D478;
     border-radius: 50%;

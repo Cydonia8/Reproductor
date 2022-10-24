@@ -150,6 +150,12 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
     border-radius: 50%;
     width: 5%;
 }
+#siguiente{
+    margin-left: auto;
+}
+#track{
+    display: flex;
+}
 .controles{
     display: flex;
     align-items: center;

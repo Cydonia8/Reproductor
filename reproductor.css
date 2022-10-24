@@ -177,6 +177,7 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
     width: 90%;
     margin: auto;
 }
+
 #handler{
     border: 3px solid #F4D478;
     border-radius: 50%;
@@ -198,6 +199,12 @@ box-shadow: 5px 10px 23px 0px rgba(32,30,30,0.61), 5px 1px 23px 9px rgba(94,33,2
 #reproductor button{
     background-color: black;
     border: none;
+}
+#siguiente{
+    margin-left: auto;
+}
+#track{
+    display: flex;
 }
 #reproductor button i{
     color: white;

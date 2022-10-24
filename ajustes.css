@@ -160,6 +160,12 @@ form .contraseñas{
     width: 90%;
     margin: auto;
 }
+#siguiente{
+    margin-left: auto;
+}
+#track{
+    display: flex;
+}
 #container{
     display: flex;
     justify-content: space-between;

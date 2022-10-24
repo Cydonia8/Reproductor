@@ -148,6 +148,12 @@ section#filtro-grupos {
     border-radius: 50%;
     width: 5%;
 }
+#siguiente{
+    margin-left: auto;
+}
+#track{
+    display: flex;
+}
 .controles{
     display: flex;
     align-items: center;
